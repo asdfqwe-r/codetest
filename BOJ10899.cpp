@@ -2,6 +2,7 @@
 #include<algorithm>
 #include<vector>
 using namespace std;
+
 int main() {
     long long int p,n;
     cin >> p >> n;
