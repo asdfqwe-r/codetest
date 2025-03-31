@@ -12,12 +12,23 @@ int main() {
         cin >> st[i] >> en[i];
     }
 
-
+    endtime = (en[0] + k);
 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < 3; j++) {
+            if (i == 0 && j == 0) continue;
+            
+            if(endtime < st[j]+i*1440) flag = false;
+            else if(endtime <= en[j]+i*1440) endtime += k;
+            else if(endtime >= en[j]+i*1440) endtime = en[j]+i*1440 + k;
+
+            if(flag == false) break;
 
         }    
+        if(flag == false) break;
     }
+
+    if(flag == true) cout << "YES";
+    else cout << "NO";
 
 }

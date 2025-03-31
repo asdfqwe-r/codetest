@@ -20,7 +20,7 @@ ll lcm (ll a, ll b) {
     return a*b/gcd(a,b);
 }
 
-
+//CRT
 ll f(ll m, ll n, ll x, ll y) {
     ll M = m*n;
     ll n1 = M/m;
