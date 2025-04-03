@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 using ll = long long;
-
 ll modInverse(ll a, ll m) {
     for(int i = 1; i < m; i++) {
         if((long long)(a*i) % (long long)m == 1) {
@@ -20,7 +19,7 @@ ll lcm (ll a, ll b) {
     return a*b/gcd(a,b);
 }
 
-//CRT
+//Chinese Remainder Theorem
 ll f(ll m, ll n, ll x, ll y) {
     ll M = m*n;
     ll n1 = M/m;
