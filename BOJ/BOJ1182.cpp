@@ -16,7 +16,7 @@ int main() {
         int cnt = 0;
         while(idx) {
             if(idx%2 == 1) {
-                sum += v[cnt]; 
+                sum += v[cnt];
             }
             idx /= 2;
             cnt++;
