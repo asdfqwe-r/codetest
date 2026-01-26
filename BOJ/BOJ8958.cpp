@@ -10,8 +10,8 @@ int main() {
         cin >> s;
         int Cons = 0;
         int ans = 0;
-        for(int i = 0; i < s.length; i++) {
-            if(s[i] == 'O') {
+        for(int i = 0; i < s.length(); i++) {
+            if (s[i] == 'O') {
                 Cons++;
                 ans += Cons;
             }
@@ -21,5 +21,4 @@ int main() {
         }
         cout << ans << '\n';
     }
-
 }
