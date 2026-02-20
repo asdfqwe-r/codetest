@@ -24,6 +24,7 @@ int main() {
         for(int j = 1000+500*i; j < 1499+500*i; j+=50) {
             ans += DP[20][j];
         }
+        
         cout.setf(ios::fixed);
         cout.precision(8);
         cout << ans << '\n';
