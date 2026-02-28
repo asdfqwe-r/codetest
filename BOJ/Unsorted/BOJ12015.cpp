@@ -24,5 +24,7 @@ int main() {
         }
         idx[i] = pos;
     }
+
+    return 0;
 }
 
